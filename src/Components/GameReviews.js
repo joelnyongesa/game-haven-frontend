@@ -1,7 +1,6 @@
 import ReactStars from 'react-rating-stars-component'
 import {MdEdit, MdDeleteOutline} from 'react-icons/md'
 import { useState } from 'react'
-import Button from './Button'
 import UpdateReviewForm from './UpdateReviewForm'
 
 function GameReviews({ reviews, user, game, onDelete }) {

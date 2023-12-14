@@ -1,5 +1,4 @@
 import Button from './Button'
-import gaming_vector from '../gaming_vector.png'
 import { Link } from 'react-router-dom'
 
 function Hero() {

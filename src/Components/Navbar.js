@@ -1,7 +1,6 @@
 import Button from "./Button"
 import { Link, useNavigate } from "react-router-dom"
 import {useSnackbar} from "notistack"
-import {useState} from 'react'
 
 function Navbar({ user  }) {
     const navigate = useNavigate()

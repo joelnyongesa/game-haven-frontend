@@ -6,7 +6,6 @@ import Landing from './Landing';
 import Home from './Home';
 import AllGames from './AllGames';
 import Game from './Game'
-import {motion} from "framer-motion"
 
 import {useState, useEffect} from 'react'
 

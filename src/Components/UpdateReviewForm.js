@@ -1,11 +1,10 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import Button from './Button'
 import { useSnackbar } from 'notistack';
 
 function UpdateReviewForm({ review, user, game }) {
     const [updatedComent, setUpdatedCommet] = useState(review.comment)
     const [updatedRating, setUpdatedRating] = useState(review.rating)
-    const [updatedReview, setUpdatedReview] = useState(review)
     const {enqueueSnackbar} = useSnackbar();
 
     function handleUpdateRating(e){
