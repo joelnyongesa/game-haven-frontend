@@ -34,7 +34,7 @@ function App() {
           setIsLoggedIn(!isLoggedIn)
         })
         .catch(e=>console.log(e))
-    }, [])
+    }, [isLoggedIn])
 
     // console.log(games)
     // console.log(user)
