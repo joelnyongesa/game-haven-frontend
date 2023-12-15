@@ -33,7 +33,7 @@ function App() {
           setIsLoggedIn(!isLoggedIn)
         })
         .catch(e=>console.log(e))
-    }, [])
+    })
 
   
   return (
