@@ -14,7 +14,6 @@ function App() {
 
   const [games, setGames] = useState([])
   const [user, setUser] = useState({})
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
     useEffect(()=>{
         fetch('https://game-haven-backend.onrender.com/games')
@@ -30,7 +29,6 @@ function App() {
         .then(r=>r.json())
         .then(data => {
           setUser(data)
-          setIsLoggedIn(isLoggedIn => !isLoggedIn)
         })
         .catch(e=>console.log(e))
     },[])
