@@ -30,10 +30,10 @@ function App() {
         .then(r=>r.json())
         .then(data => {
           setUser(data)
-          setIsLoggedIn(!isLoggedIn)
+          setIsLoggedIn(prevIsLoggedIn => !prevIsLoggedIn)
         })
         .catch(e=>console.log(e))
-    })
+    },[])
 
   
   return (
