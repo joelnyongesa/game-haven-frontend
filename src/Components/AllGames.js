@@ -5,21 +5,6 @@ import {motion} from 'framer-motion'
 
 function AllGames({ games }) {
 
-    // const [gameID, setGameID]
-    // const [game, setGame] = useState([]);
-    // const navigate = useNavigate();
-
-    // function handleCardClick(gameID){
-    //     navigate(`all-games/${gameID}`)
-    // }
-
-    // function fetchOneGame(id){
-    //     fetch(`/games/${id}`)
-    //     .then(r=>r.json())
-    //     .then(data=>setGame(data))
-    //     .then(navigate(`/all-games/:${id}`))
-    //     .catch(e=>console.log(e))
-    // }
 
     const gameCard = games.map((game)=>(
         

@@ -16,7 +16,7 @@ function Navbar({ user, setUser  }) {
 
     function handleLogOutClick(){
         setLoading(true);
-        fetch('/logout',
+        fetch('https://game-haven-backend.onrender.com/logout',
         {
             method: "DELETE"
         })

@@ -19,7 +19,7 @@ function Game({ user }) {
     let {id} = useParams()
 
     useEffect(()=>{
-        fetch(`/games/${id}`)
+        fetch(`https://game-haven-backend.onrender.com/games/${id}`)
         .then(r=>r.json())
         .then(data=>{
             setGame(data);

@@ -79,7 +79,7 @@ function SignUp() {
                 validationSchema={errorMessagesSchema}  
                 onSubmit={({confirmPassword, e, ...values})=>{
                     setLoading(true)
-                    fetch("/signup",{
+                    fetch("https://game-haven-backend.onrender.com/signup",{
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",

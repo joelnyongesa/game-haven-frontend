@@ -18,7 +18,7 @@ function AddReviewForm({ user, game, handleUpdateReviews}) {
             game_entry_id: game.id
         }
 
-        fetch('/game-reviews',{
+        fetch('https://game-haven-backend.onrender.com/game-reviews',{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

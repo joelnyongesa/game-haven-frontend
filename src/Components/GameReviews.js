@@ -13,7 +13,7 @@ function GameReviews({ reviews, user, game, onDelete }) {
     }
 
     function handleDeleteReview(id){
-        fetch(`/game-reviews/${id}`,{
+        fetch(`https://game-haven-backend.onrender.com/game-reviews/${id}`,{
             method: "DELETE"
         })
         .then(onDelete(id))

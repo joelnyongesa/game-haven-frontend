@@ -61,7 +61,7 @@ function Login({ setUser }) {
           onSubmit={(values, formikBag) => {
             // formikBag.setSubmitting(true);
             setLoading(true)
-            fetch('/login', {
+            fetch('https://game-haven-backend.onrender.com/login', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

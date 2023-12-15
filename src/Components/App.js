@@ -17,7 +17,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
     useEffect(()=>{
-        fetch('/games')
+        fetch('https://game-haven-backend.onrender.com/games')
         .then(r => r.json())
         .then(data=>setGames(data))
         .catch(e=> console.log(e))
