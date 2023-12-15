@@ -23,7 +23,6 @@ function App() {
         .catch(e=> console.log(e))
     }, [])
 
-    // console.log(games);
 
 
     useEffect(()=>{
@@ -36,20 +35,17 @@ function App() {
         .catch(e=>console.log(e))
     }, [isLoggedIn])
 
-    // console.log(games)
-    // console.log(user)
-    // console.log(isLoggedIn);
   
   return (
     <div>
       <Routes>
         <Route element={<Landing 
-                          user={user}
+                          user={user} setUser={ setUser}
                          />}>
           <Route path='/' element={<Home />}/>
           <Route path='/home' element={<Home games={games}/>}/>
           <Route path='/signup' element={<SignUp />}/>
-          <Route path='/login' element={<Login />}/>
+          <Route path='/login' element={<Login setUser={ setUser } />}/>
           <Route path='/all-games' element={<AllGames games={games}/>}/>
           <Route path='/all-games/:id' element={<Game user={user} />} />
         </Route>
