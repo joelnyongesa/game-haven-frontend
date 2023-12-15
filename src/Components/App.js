@@ -26,7 +26,7 @@ function App() {
 
 
     useEffect(()=>{
-        fetch('/session')
+        fetch('https://game-haven-backend.onrender.com/session')
         .then(r=>r.json())
         .then(data => {
           setUser(data)
